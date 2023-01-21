@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+/* container */
+.container {
+    width: 20%;
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 8px 1px rgba(26, 26, 26, 0.2);
+}
+
+/* contains img and texts */
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 1rem;
+}
+
+/* img */
+.qrcode {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+/* h2 */
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: hsl(218, 44%, 22%);
+}
+
+/* p tags */
+p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(220, 15%, 55%)
+}
+
+/*============================================================== MEDIA QUERY ====================================================== */
+/* Mobile devices */
+@media screen {
+    .container {
+        width: 70%;
+    }
+}
+/* ipads */
+@media screen and (min-width: 576px) {
+    .container {
+        width: 40%;
+    }
+}
+/* large screens */
+@media screen and (min-width: 768px) {
+    .container {
+        width: 20%;
+    }
+}
